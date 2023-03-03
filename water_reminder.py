@@ -44,7 +44,7 @@ try:
     start_time=data["wake_up"]
     end_time=data["sleep"]
     while datetime.now().hour!=end_time.hour:
-        if (datetime.now().hour>start_time.hour and datetime.now().minute==24 and datetime.now().second==00) or True:
+        if (datetime.now().hour>start_time.hour and datetime.now().minute==00 and datetime.now().second==00):
             url = 'http://127.0.0.1:5000/'
             webbrowser.open(url)
 
